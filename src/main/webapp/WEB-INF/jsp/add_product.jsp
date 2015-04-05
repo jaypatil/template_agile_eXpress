@@ -199,7 +199,7 @@
                         <div class="col-lg-12">
                             <div class="col-lg-8">
                                 <h1 class="page-header">
-                                    Welcome <small><< User Name >></small>
+                                    Product Management<small> Add Product</small>
                                 </h1>
                             </div>
                             <div class="col-lg-4">
@@ -235,12 +235,85 @@
                     </div>
                     <!-- /.row -->
                     <div class="row">
-                        
+
                         <div class="col-lg-12">
-                            Write some thing here
+                            <div class="col-lg-2"></div>
+                            <div class="row">
+                                <div class="col-lg-6">
+
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Product No</label>
+                                            <input class="form-control" placeholder="Product No">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Date Of Establishment</label>
+                                            <div class='input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Product Name</label>
+                                            <input class="form-control" placeholder="Product Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Start Date</label>
+
+                                            <div class='input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group">
+                                            <label>End Date</label>
+
+                                            <div class='input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Remark</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Product Logo</label>
+                                            <input type="file">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Attachments</label>
+                                            <input type="file">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Register</button>
+                                        <button type="reset" class="btn btn-default">Cancel</button>
+
+                                    </form>
+
+                                </div>
+
+                            </div>
+
+
                         </div>
                     </div>
-                  
+
                 </div>
                 <!-- /.container-fluid -->
 

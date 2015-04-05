@@ -164,27 +164,39 @@
                             <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> User Management <i class="fa fa-fw fa-caret-down"></i></a>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Module <i class="fa fa-fw fa-caret-down"></i></a>
                             <ul id="demo">
                                 <li>
-                                    <a href="#">Add User</a>
+                                    <a href="#">Add Module</a>
                                 </li>
                                 <li>
-                                    <a href="#">List User</a>
+                                    <a href="#">List Module</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Product Management <i class="fa fa-fw fa-caret-down"></i></a>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Product Backlog <i class="fa fa-fw fa-caret-down"></i></a>
                             <ul id="demo1">
                                 <li>
-                                    <a href="#">Add Product</a>
+                                    <a href="#">Add Task</a>
                                 </li>
                                 <li>
-                                    <a href="#">Manage Product</a>
+                                    <a href="#">List Task</a>
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-arrows-v"></i> Sprint Backlog <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="demo2">
+                                <li>
+                                    <a href="#">Add Sprint</a>
+                                </li>
+                                <li>
+                                    <a href="#">List Sprint</a>
+                                </li>
+                            </ul>
+                        </li>
+                       
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -197,25 +209,9 @@
                     <!-- Page Heading -->
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="col-lg-8">
-                                <h1 class="page-header">
-                                    Welcome <small><< User Name >></small>
-                                </h1>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-group-lg">
-                                    <label>Select </label>
-                                    <select class="form-control" >
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
+                            <h1 class="page-header">
+                                Dashboard <small>Statistics Overview</small>
+                            </h1>
                             <ol class="breadcrumb">
                                 <li class="active">
                                     <i class="fa fa-dashboard"></i> Dashboard
@@ -234,13 +230,137 @@
                         </div>
                     </div>
                     <!-- /.row -->
+
                     <div class="row">
-                        
-                        <div class="col-lg-12">
-                            Write some thing here
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-comments fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">26</div>
+                                            <div>New Comments!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-green">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-tasks fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">12</div>
+                                            <div>New Tasks!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-shopping-cart fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">124</div>
+                                            <div>New Orders!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-red">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-support fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">13</div>
+                                            <div>Support Tickets!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                  
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-8">
+                            Write Content Here
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Bar Graph Example</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div id="morris-bar-chart"></div>
+                                        <div class="text-right">
+                                            <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            
+                            <ol class="breadcrumb">
+                                <li class="active">
+                                    <i class="fa fa-dashboard"></i> Sprimt
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="col-lg-12">
+                           
+                            <div class="col-lg-4">sprint 1</div>
+                            <div class="col-lg-4">sprint 2</div>
+                            <div class="col-lg-4">sprint 3</div>
+                        </div>
+                    </div>
                 </div>
                 <!-- /.container-fluid -->
 

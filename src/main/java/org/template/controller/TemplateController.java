@@ -17,7 +17,7 @@ public class TemplateController {
 
     @RequestMapping(value = {"/", "index"})
     public String indexPage() {
-        return "index";
+        return "selected_product";
     }
 
     @RequestMapping(value = {"/signinpage"})

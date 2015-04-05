@@ -199,7 +199,7 @@
                         <div class="col-lg-12">
                             <div class="col-lg-8">
                                 <h1 class="page-header">
-                                    Welcome <small><< User Name >></small>
+                                    Product Management<small> List of Products</small>
                                 </h1>
                             </div>
                             <div class="col-lg-4">
@@ -235,34 +235,111 @@
                     </div>
                     <!-- /.row -->
                     <div class="row">
-                        
                         <div class="col-lg-12">
-                            Write some thing here
+                            <div class="col-lg-6"> <h2>Product List</h2></div>
+                            <div class="col-lg-3"><a class="btn btn-default" href="#">Add Product</a></div>
+                            <div class="col-lg-3">
+                                <div class="form-group input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                  
+                    <!-- /.row -->
+                    <div class="col-lg-12">
+
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Sr</th>
+                                        <th>Product Name</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Status</th>
+                                        <th>Total Module</th>
+                                        <th>Download</th>
+                                        <th>Action</th>
+
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active">
+                                        <td>/index.html</td>
+                                        <td>1265</td>
+                                        <td>32.3%</td>
+                                        <td>$321.33</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>/about.html</td>
+                                        <td>261</td>
+                                        <td>33.3%</td>
+                                        <td>$234.12</td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>/sales.html</td>
+                                        <td>665</td>
+                                        <td>21.3%</td>
+                                        <td>$16.34</td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>/blog.html</td>
+                                        <td>9516</td>
+                                        <td>89.3%</td>
+                                        <td>$1644.43</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/404.html</td>
+                                        <td>23</td>
+                                        <td>34.3%</td>
+                                        <td>$23.52</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/services.html</td>
+                                        <td>421</td>
+                                        <td>60.3%</td>
+                                        <td>$724.32</td>
+                                    </tr>
+                                    <tr>
+                                        <td>/blog/post.html</td>
+                                        <td>1233</td>
+                                        <td>93.2%</td>
+                                        <td>$126.34</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                 </div>
-                <!-- /.container-fluid -->
+                <!-- /.row -->
+
 
             </div>
-            <!-- /#page-wrapper -->
+            <!-- /.container-fluid -->
 
         </div>
-        <!-- /#wrapper -->
+        <!-- /#page-wrapper -->
 
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
+    </div>
+    <!-- /#wrapper -->
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 
-        <!-- Morris Charts JavaScript -->
-        <script src="js/plugins/morris/raphael.min.js"></script>
-        <script src="js/plugins/morris/morris.min.js"></script>
-        <script src="js/plugins/morris/morris-data.js"></script>
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
 
-    </body>
+</body>
 
 </html>
 

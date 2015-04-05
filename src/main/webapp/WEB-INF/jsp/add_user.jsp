@@ -199,7 +199,7 @@
                         <div class="col-lg-12">
                             <div class="col-lg-8">
                                 <h1 class="page-header">
-                                    Welcome <small><< User Name >></small>
+                                    User Management<small> Add User</small>
                                 </h1>
                             </div>
                             <div class="col-lg-4">
@@ -237,7 +237,49 @@
                     <div class="row">
                         
                         <div class="col-lg-12">
-                            Write some thing here
+                            <div class="col-lg-2"></div>
+                        <div class="row">
+                            <div class="col-lg-6">
+
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label>First Name</label>
+                                        <input class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Last Name</label>
+                                        <input class="form-control" placeholder="First Name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Role</label>
+                                        <select class="form-control">
+                                            <option>xyz</option>
+                                            <option>xyz</option>
+                                            <option>xyz</option>
+                                            <option>xyz</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">Send Mail
+                                            </label>
+                                        </div>
+                                      
+
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Register</button>
+                                    <button type="reset" class="btn btn-default">Cancel</button>
+
+                                </form>
+
+                            </div>
+
+                        </div>
+                        
+
                         </div>
                     </div>
                   
