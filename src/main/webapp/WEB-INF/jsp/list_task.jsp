@@ -164,27 +164,42 @@
                             <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> User Management <i class="fa fa-fw fa-caret-down"></i></a>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Module <i class="fa fa-fw fa-caret-down"></i></a>
                             <ul id="demo">
                                 <li>
-                                    <a href="#">Add User</a>
+                                    <a href="#">Add Module</a>
                                 </li>
                                 <li>
-                                    <a href="#">List User</a>
+                                    <a href="#">List Module</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Product Management <i class="fa fa-fw fa-caret-down"></i></a>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Product Backlog <i class="fa fa-fw fa-caret-down"></i></a>
                             <ul id="demo1">
                                 <li>
-                                    <a href="#">Add Product</a>
+                                    <a href="#">Add Task</a>
                                 </li>
                                 <li>
-                                    <a href="#">Manage Product</a>
+                                    <a href="#">List Task</a>
+                                </li>
+                                <li>
+                                    <a href="#">View Task</a>
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-arrows-v"></i> Sprint Backlog <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="demo2">
+                                <li>
+                                    <a href="#">Add Sprint</a>
+                                </li>
+                                <li>
+                                    <a href="#">List Sprint</a>
+                                </li>
+                            </ul>
+                        </li>
+                       
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -197,25 +212,9 @@
                     <!-- Page Heading -->
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="col-lg-8">
-                                <h1 class="page-header">
-                                    Product Management<small> List of Products</small>
-                                </h1>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-group-lg">
-                                    <label>Select </label>
-                                    <select class="form-control" >
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
+                            <h1 class="page-header">
+                                Product Backlog <small>List Task</small>
+                            </h1>
                             <ol class="breadcrumb">
                                 <li class="active">
                                     <i class="fa fa-dashboard"></i> Dashboard
@@ -224,20 +223,10 @@
                         </div>
                     </div>
                     <!-- /.row -->
-
-                    <div class="row">
+   <div class="row">
                         <div class="col-lg-12">
-                            <div class="alert alert-info alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                <i class="fa fa-info-circle"></i>  <strong>Like SB Admin?</strong> Try out <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">SB Admin 2</a> for additional features!
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="col-lg-6"> <h2>Product List</h2></div>
-                            <div class="col-lg-3"><a class="btn btn-default" href="#">Add Product</a></div>
+                            <div class="col-lg-6"> <h2>Task List</h2></div>
+                            <div class="col-lg-3"><a class="btn btn-default" href="#">Add Task</a></div>
                             <div class="col-lg-3">
                                 <div class="form-group input-group">
                                     <input type="text" class="form-control">
@@ -255,11 +244,9 @@
                                 <thead>
                                     <tr>
                                         <th>Sr</th>
-                                        <th>Product Name</th>
-                                        <th>Start Date</th>
-                                        <th>End Date</th>
+                                        <th>Task Name</th>
+                                        <th>Priority</th>
                                         <th>Status</th>
-                                        <th>Total Module</th>
                                         <th>Download</th>
                                         <th>Action</th>
 
@@ -315,31 +302,27 @@
                     </div>
  <!-- /.row -->
                 </div>
-                <!-- /.row -->
-
+                <!-- /.container-fluid -->
 
             </div>
-            <!-- /.container-fluid -->
+            <!-- /#page-wrapper -->
 
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /#wrapper -->
 
-    </div>
-    <!-- /#wrapper -->
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
 
 
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
+        <!-- Morris Charts JavaScript -->
+        <script src="js/plugins/morris/raphael.min.js"></script>
+        <script src="js/plugins/morris/morris.min.js"></script>
+        <script src="js/plugins/morris/morris-data.js"></script>
 
-</body>
+    </body>
 
 </html>
 
