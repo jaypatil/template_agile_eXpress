@@ -21,5 +21,16 @@
     p:password="${jdbc.password}" /-->
 
     <!-- ADD PERSISTENCE SUPPORT HERE (jpa, hibernate, etc) -->
+    <!-- Business Component Declaration,
+     EX. DataSource, DAO, Service etc.
+    -->
+    <context:component-scan base-package="org.template"/>
 
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/spring_contact_app_db?characterEncoding=UTF8"/>
+        <property name="username" value="root"/>
+        <property name="password" value=""/>
+       
+    </bean>
 </beans>
