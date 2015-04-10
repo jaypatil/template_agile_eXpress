@@ -199,7 +199,7 @@
                         <div class="col-lg-12">
                             <div class="col-lg-8">
                                 <h1 class="page-header">
-                                    Welcome <small><< User Name >></small>
+                                    Product Management<small> Add Product</small>
                                 </h1>
                             </div>
                             <div class="col-lg-4">
@@ -237,87 +237,63 @@
                     <div class="row">
 
                         <div class="col-lg-12">
-                            Write some thing here
-                            <table border="1">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="index.htm">index</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="add_task.htm">add_task</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="add_user.htm">add_user</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td> 
-                                            <a href="list_product.htm">list_product</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="list_task.htm">list_task</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="add_product.htm">add_product</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="selected_product.htm">selected_product</a>
+                            <div class="col-lg-2"></div>
+                            <div class="row">
+                                <div class="col-lg-6">
 
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="list_user.htm">list_user</a>
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Task Name</label>
+                                            <input class="form-control" placeholder="Product No">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Date Of Establishment</label>
+                                            <div class='input-group date' id='datetimepicker1'>
+                                                <input type='text' class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Module</label>
+                                            <select class="form-control">
+                                                <option>xyz</option>
+                                                <option>xyz</option>
+                                                <option>xyz</option>
+                                                <option>xyz</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Priority</label>
+                                            <select class="form-control">
+                                                <option>xyz</option>
+                                                <option>xyz</option>
+                                                <option>xyz</option>
+                                                <option>xyz</option>
+                                            </select>
+                                        </div>
 
-                                        </td>
-                                    </tr>                                      <td>
-                                <tr>
-                                    <td>
-                                        <a href="product_full_view.htm">product_full_view</a>
+                                        <div class="form-group">
+                                            <label>Description</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>User Story</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Attachments</label>
+                                            <input type="file">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Register</button>
+                                        <button type="reset" class="btn btn-default">Cancel</button>
 
-                                    </td>
-                                </tr>                                      <td>
-                                <tr>
-                                    <td>
-                                        <a href="add_module.htm">add_module</a>
+                                    </form>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="add_product_backlog.htm">add_product_backlog</a>
+                                </div>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="add_sub_task.htm">add_sub_task</a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="list_sub_task.htm">list_sub_task</a>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            </div>
 
 
                         </div>

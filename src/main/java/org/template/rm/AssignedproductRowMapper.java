@@ -3,13 +3,13 @@ package org.template.rm;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
-import org.template.domain.Assignedproduct;
+import org.template.domain.AssignedProduct;
 
-public class AssignedproductRowMapper implements RowMapper<Assignedproduct> {
+public class AssignedproductRowMapper implements RowMapper<AssignedProduct> {
 
     @Override
-    public Assignedproduct mapRow(ResultSet rs, int i) throws SQLException {
-        Assignedproduct assignedproduct = new Assignedproduct();
+    public AssignedProduct mapRow(ResultSet rs, int i) throws SQLException {
+        AssignedProduct assignedproduct = new AssignedProduct();
         assignedproduct.setAssignedProductId(rs.getInt("assignedProductId"));
         assignedproduct.setProductId(rs.getInt("productId"));
         assignedproduct.setUserId(rs.getInt("userId"));

@@ -3,13 +3,13 @@ package org.template.rm;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
-import org.template.domain.Productbacklog;
+import org.template.domain.ProductBacklog;
 
-public class ProductbacklogRowMapper implements RowMapper<Productbacklog> {
+public class ProductbacklogRowMapper implements RowMapper<ProductBacklog> {
 
     @Override
-    public Productbacklog mapRow(ResultSet rs, int i) throws SQLException {
-        Productbacklog productbacklog = new Productbacklog();
+    public ProductBacklog mapRow(ResultSet rs, int i) throws SQLException {
+        ProductBacklog productbacklog = new ProductBacklog();
         productbacklog.setProductBacklogId(rs.getInt("productBacklogId"));
         productbacklog.setName(rs.getString("name"));
         productbacklog.setDoe(rs.getDate("doe"));

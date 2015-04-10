@@ -164,27 +164,42 @@
                             <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> User Management <i class="fa fa-fw fa-caret-down"></i></a>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Module <i class="fa fa-fw fa-caret-down"></i></a>
                             <ul id="demo">
                                 <li>
-                                    <a href="#">Add User</a>
+                                    <a href="#">Add Module</a>
                                 </li>
                                 <li>
-                                    <a href="#">List User</a>
+                                    <a href="#">List Module</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Product Management <i class="fa fa-fw fa-caret-down"></i></a>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo1"><i class="fa fa-fw fa-arrows-v"></i> Product Backlog <i class="fa fa-fw fa-caret-down"></i></a>
                             <ul id="demo1">
                                 <li>
-                                    <a href="#">Add Product</a>
+                                    <a href="#">Add Task</a>
                                 </li>
                                 <li>
-                                    <a href="#">Manage Product</a>
+                                    <a href="#">List Task</a>
+                                </li>
+                                <li>
+                                    <a href="#">View Task</a>
                                 </li>
                             </ul>
                         </li>
+                        <li>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#demo2"><i class="fa fa-fw fa-arrows-v"></i> Sprint Backlog <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="demo2">
+                                <li>
+                                    <a href="#">Add Sprint</a>
+                                </li>
+                                <li>
+                                    <a href="#">List Sprint</a>
+                                </li>
+                            </ul>
+                        </li>
+                       
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -197,25 +212,9 @@
                     <!-- Page Heading -->
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="col-lg-8">
-                                <h1 class="page-header">
-                                    Welcome <small><< User Name >></small>
-                                </h1>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-group-lg">
-                                    <label>Select </label>
-                                    <select class="form-control" >
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
+                            <h1 class="page-header">
+                                Product Backlog <small>List Sub Task</small>
+                            </h1>
                             <ol class="breadcrumb">
                                 <li class="active">
                                     <i class="fa fa-dashboard"></i> Dashboard
@@ -224,105 +223,85 @@
                         </div>
                     </div>
                     <!-- /.row -->
-
-                    <div class="row">
+   <div class="row">
                         <div class="col-lg-12">
-                            <div class="alert alert-info alert-dismissable">
-                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                <i class="fa fa-info-circle"></i>  <strong>Like SB Admin?</strong> Try out <a href="http://startbootstrap.com/template-overviews/sb-admin-2" class="alert-link">SB Admin 2</a> for additional features!
+                            <div class="col-lg-6"> <h2>Sub Task List</h2></div>
+                            <div class="col-lg-3"><a class="btn btn-default" href="#">Add Sub Task</a></div>
+                            <div class="col-lg-3">
+                                <div class="form-group input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- /.row -->
-                    <div class="row">
+                    <div class="col-lg-12">
 
-                        <div class="col-lg-12">
-                            Write some thing here
-                            <table border="1">
+
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover table-striped">
                                 <thead>
                                     <tr>
-                                        <th></th>
+                                        <th>Sr</th>
+                                        <th>Not Started</th>
+                                        <th>Started</th>
+                                        <th>Complete</th>
+                                        <th>DOE</th>
+                                        <th>Duration</th>
+                                        <th>Action</th>
+
+
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="index.htm">index</a>
-                                        </td>
+                                    <tr class="active">
+                                        <td>/index.html</td>
+                                        <td>1265</td>
+                                        <td>32.3%</td>
+                                        <td>$321.33</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>/about.html</td>
+                                        <td>261</td>
+                                        <td>33.3%</td>
+                                        <td>$234.12</td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>/sales.html</td>
+                                        <td>665</td>
+                                        <td>21.3%</td>
+                                        <td>$16.34</td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>/blog.html</td>
+                                        <td>9516</td>
+                                        <td>89.3%</td>
+                                        <td>$1644.43</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <a href="add_task.htm">add_task</a>
-                                        </td>
+                                        <td>/404.html</td>
+                                        <td>23</td>
+                                        <td>34.3%</td>
+                                        <td>$23.52</td>
                                     </tr>
                                     <tr>
-                                        <td>
-                                            <a href="add_user.htm">add_user</a>
-                                        </td>
+                                        <td>/services.html</td>
+                                        <td>421</td>
+                                        <td>60.3%</td>
+                                        <td>$724.32</td>
                                     </tr>
                                     <tr>
-                                        <td> 
-                                            <a href="list_product.htm">list_product</a>
-                                        </td>
+                                        <td>/blog/post.html</td>
+                                        <td>1233</td>
+                                        <td>93.2%</td>
+                                        <td>$126.34</td>
                                     </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="list_task.htm">list_task</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="add_product.htm">add_product</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="selected_product.htm">selected_product</a>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="list_user.htm">list_user</a>
-
-                                        </td>
-                                    </tr>                                      <td>
-                                <tr>
-                                    <td>
-                                        <a href="product_full_view.htm">product_full_view</a>
-
-                                    </td>
-                                </tr>                                      <td>
-                                <tr>
-                                    <td>
-                                        <a href="add_module.htm">add_module</a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="add_product_backlog.htm">add_product_backlog</a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="add_sub_task.htm">add_sub_task</a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="list_sub_task.htm">list_sub_task</a>
-                                    </td>
-                                </tr>
                                 </tbody>
                             </table>
-
-
                         </div>
                     </div>
-
+ <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
 

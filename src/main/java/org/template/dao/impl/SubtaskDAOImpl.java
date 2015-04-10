@@ -10,12 +10,12 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 import org.template.dao.BaseDAO;
-import org.template.dao.SubtaskDAO;
-import org.template.domain.Subtask;
+import org.template.dao.SubTaskDAO;
+import org.template.domain.SubTask;
 import org.template.rm.SubtaskRowMapper;
 
 @Repository
-public class SubtaskDAOImpl extends BaseDAO implements SubtaskDAO {
+public class SubtaskDAOImpl extends BaseDAO implements SubTaskDAO {
 
     private static final String SQL_INSERT_QUERY = "INSERT INTO Subtask ( subTaskId, sprintBacklogId, name, doe, status, totalTime, summary, startDate, completeDate, assignedTo, assignedDate) VALUES( :subTaskId, :sprintBacklogId, :name, :doe, :status, :totalTime, :summary, :startDate, :completeDate, :assignedTo, :assignedDate)";
     private static final String SQL_UPDATE_QUERY = "UPDATE Subtask SET subTaskId = :subTaskId, sprintBacklogId = :sprintBacklogId, name = :name, doe = :doe, status = :status, totalTime = :totalTime, summary = :summary, startDate = :startDate, completeDate = :completeDate, assignedTo = :assignedTo, assignedDate = :assignedDate WHERE subTaskId= :subTaskId";
@@ -25,7 +25,7 @@ public class SubtaskDAOImpl extends BaseDAO implements SubtaskDAO {
     private static final String SQL_SELECT_BY_PROPERTY_QUERY = "SELECT * FROM Subtask WHERE subTaskId?";
 
     @Override
-    public void save(Subtask subtask) {
+    public void save(SubTask subtask) {
         Map p = new HashMap();
         p.put("subTaskId", subtask.getSubTaskId());
         p.put("sprintBacklogId", subtask.getSprintBacklogId());
@@ -47,7 +47,7 @@ public class SubtaskDAOImpl extends BaseDAO implements SubtaskDAO {
     }
 
     @Override
-    public void update(Subtask subtask) {
+    public void update(SubTask subtask) {
         Map p = new HashMap();
         p.put("subTaskId", subtask.getSubTaskId());
         p.put("sprintBacklogId", subtask.getSprintBacklogId());
@@ -64,7 +64,7 @@ public class SubtaskDAOImpl extends BaseDAO implements SubtaskDAO {
     }
 
     @Override
-    public void delete(Subtask subtask) {
+    public void delete(SubTask subtask) {
         delete(subtask.getSubTaskId());
     }
 
@@ -75,18 +75,18 @@ public class SubtaskDAOImpl extends BaseDAO implements SubtaskDAO {
     }
 
     @Override
-    public Subtask findById(Integer subtaskId) {
-        Subtask subtask = getJdbcTemplate().queryForObject(SQL_SELECT_BY_ID_QUERY, new SubtaskRowMapper(), subtaskId);
+    public SubTask findById(Integer subtaskId) {
+        SubTask subtask = getJdbcTemplate().queryForObject(SQL_SELECT_BY_ID_QUERY, new SubtaskRowMapper(), subtaskId);
         return subtask;
     }
 
     @Override
-    public List<Subtask> findAll() {
+    public List<SubTask> findAll() {
         return getJdbcTemplate().query(SQL_SELECT_QUERY, new SubtaskRowMapper());
     }
 
     @Override
-    public List<Subtask> findByProperty(String property, Object value) {
+    public List<SubTask> findByProperty(String property, Object value) {
         return getJdbcTemplate().query(SQL_SELECT_BY_PROPERTY_QUERY, new SubtaskRowMapper(), value);
     }
 }

@@ -9,13 +9,13 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
-import org.template.dao.AssignedproductDAO;
+import org.template.dao.AssignedProductDAO;
 import org.template.dao.BaseDAO;
-import org.template.domain.Assignedproduct;
+import org.template.domain.AssignedProduct;
 import org.template.rm.AssignedproductRowMapper;
 
 @Repository
-public class AssignedproductDAOImpl extends BaseDAO implements AssignedproductDAO {
+public class AssignedproductDAOImpl extends BaseDAO implements AssignedProductDAO {
 
     private static final String SQL_INSERT_QUERY = "INSERT INTO Assignedproduct ( assignedProductId, productId, userId, doe, byUserId) VALUES( :assignedProductId, :productId, :userId, :doe, :byUserId)";
     private static final String SQL_UPDATE_QUERY = "UPDATE Assignedproduct SET assignedProductId = :assignedProductId, productId = :productId, userId = :userId, doe = :doe, byUserId = :byUserId WHERE assignedProductId= :assignedProductId";
@@ -25,7 +25,7 @@ public class AssignedproductDAOImpl extends BaseDAO implements AssignedproductDA
     private static final String SQL_SELECT_BY_PROPERTY_QUERY = "SELECT * FROM Assignedproduct WHERE assignedProductId?";
 
     @Override
-    public void save(Assignedproduct assignedproduct) {
+    public void save(AssignedProduct assignedproduct) {
         Map p = new HashMap();
         p.put("assignedProductId", assignedproduct.getAssignedProductId());
         p.put("productId", assignedproduct.getProductId());
@@ -41,7 +41,7 @@ public class AssignedproductDAOImpl extends BaseDAO implements AssignedproductDA
     }
 
     @Override
-    public void update(Assignedproduct assignedproduct) {
+    public void update(AssignedProduct assignedproduct) {
         Map p = new HashMap();
         p.put("assignedProductId", assignedproduct.getAssignedProductId());
         p.put("productId", assignedproduct.getProductId());
@@ -52,7 +52,7 @@ public class AssignedproductDAOImpl extends BaseDAO implements AssignedproductDA
     }
 
     @Override
-    public void delete(Assignedproduct assignedproduct) {
+    public void delete(AssignedProduct assignedproduct) {
         delete(assignedproduct.getAssignedProductId());
     }
 
@@ -63,18 +63,18 @@ public class AssignedproductDAOImpl extends BaseDAO implements AssignedproductDA
     }
 
     @Override
-    public Assignedproduct findById(Integer assignedproductId) {
-        Assignedproduct assignedproduct = getJdbcTemplate().queryForObject(SQL_SELECT_BY_ID_QUERY, new AssignedproductRowMapper(), assignedproductId);
+    public AssignedProduct findById(Integer assignedproductId) {
+        AssignedProduct assignedproduct = getJdbcTemplate().queryForObject(SQL_SELECT_BY_ID_QUERY, new AssignedproductRowMapper(), assignedproductId);
         return assignedproduct;
     }
 
     @Override
-    public List<Assignedproduct> findAll() {
+    public List<AssignedProduct> findAll() {
         return getJdbcTemplate().query(SQL_SELECT_QUERY, new AssignedproductRowMapper());
     }
 
     @Override
-    public List<Assignedproduct> findByProperty(String property, Object value) {
+    public List<AssignedProduct> findByProperty(String property, Object value) {
         return getJdbcTemplate().query(SQL_SELECT_BY_PROPERTY_QUERY, new AssignedproductRowMapper(), value);
     }
 }

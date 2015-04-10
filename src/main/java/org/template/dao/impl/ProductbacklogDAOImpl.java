@@ -10,12 +10,12 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 import org.template.dao.BaseDAO;
-import org.template.dao.ProductbacklogDAO;
-import org.template.domain.Productbacklog;
+import org.template.dao.ProductBacklogDAO;
+import org.template.domain.ProductBacklog;
 import org.template.rm.ProductbacklogRowMapper;
 
 @Repository
-public class ProductbacklogDAOImpl extends BaseDAO implements ProductbacklogDAO {
+public class ProductbacklogDAOImpl extends BaseDAO implements ProductBacklogDAO {
 
     private static final String SQL_INSERT_QUERY = "INSERT INTO Productbacklog ( productBacklogId, name, doe, moduleId, priority, description, userStory, uploadPath, status, byUserId, reason, statusUpdatedBy, productId) VALUES( :productBacklogId, :name, :doe, :moduleId, :priority, :description, :userStory, :uploadPath, :status, :byUserId, :reason, :statusUpdatedBy, :productId)";
     private static final String SQL_UPDATE_QUERY = "UPDATE Productbacklog SET productBacklogId = :productBacklogId, name = :name, doe = :doe, moduleId = :moduleId, priority = :priority, description = :description, userStory = :userStory, uploadPath = :uploadPath, status = :status, byUserId = :byUserId, reason = :reason, statusUpdatedBy = :statusUpdatedBy, productId = :productId WHERE productBacklogId= :productBacklogId";
@@ -25,7 +25,7 @@ public class ProductbacklogDAOImpl extends BaseDAO implements ProductbacklogDAO 
     private static final String SQL_SELECT_BY_PROPERTY_QUERY = "SELECT * FROM Productbacklog WHERE productBacklogId?";
 
     @Override
-    public void save(Productbacklog productbacklog) {
+    public void save(ProductBacklog productbacklog) {
         Map p = new HashMap();
         p.put("productBacklogId", productbacklog.getProductBacklogId());
         p.put("name", productbacklog.getName());
@@ -49,7 +49,7 @@ public class ProductbacklogDAOImpl extends BaseDAO implements ProductbacklogDAO 
     }
 
     @Override
-    public void update(Productbacklog productbacklog) {
+    public void update(ProductBacklog productbacklog) {
         Map p = new HashMap();
         p.put("productBacklogId", productbacklog.getProductBacklogId());
         p.put("name", productbacklog.getName());
@@ -68,7 +68,7 @@ public class ProductbacklogDAOImpl extends BaseDAO implements ProductbacklogDAO 
     }
 
     @Override
-    public void delete(Productbacklog productbacklog) {
+    public void delete(ProductBacklog productbacklog) {
         delete(productbacklog.getProductBacklogId());
     }
 
@@ -79,18 +79,18 @@ public class ProductbacklogDAOImpl extends BaseDAO implements ProductbacklogDAO 
     }
 
     @Override
-    public Productbacklog findById(Integer productbacklogId) {
-        Productbacklog productbacklog = getJdbcTemplate().queryForObject(SQL_SELECT_BY_ID_QUERY, new ProductbacklogRowMapper(), productbacklogId);
+    public ProductBacklog findById(Integer productbacklogId) {
+        ProductBacklog productbacklog = getJdbcTemplate().queryForObject(SQL_SELECT_BY_ID_QUERY, new ProductbacklogRowMapper(), productbacklogId);
         return productbacklog;
     }
 
     @Override
-    public List<Productbacklog> findAll() {
+    public List<ProductBacklog> findAll() {
         return getJdbcTemplate().query(SQL_SELECT_QUERY, new ProductbacklogRowMapper());
     }
 
     @Override
-    public List<Productbacklog> findByProperty(String property, Object value) {
+    public List<ProductBacklog> findByProperty(String property, Object value) {
         return getJdbcTemplate().query(SQL_SELECT_BY_PROPERTY_QUERY, new ProductbacklogRowMapper(), value);
     }
 }

@@ -3,13 +3,13 @@ package org.template.rm;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
-import org.template.domain.Subtask;
+import org.template.domain.SubTask;
 
-public class SubtaskRowMapper implements RowMapper<Subtask> {
+public class SubtaskRowMapper implements RowMapper<SubTask> {
 
     @Override
-    public Subtask mapRow(ResultSet rs, int i) throws SQLException {
-        Subtask subtask = new Subtask();
+    public SubTask mapRow(ResultSet rs, int i) throws SQLException {
+        SubTask subtask = new SubTask();
         subtask.setSubTaskId(rs.getInt("subTaskId"));
         subtask.setSprintBacklogId(rs.getInt("sprintBacklogId"));
         subtask.setName(rs.getString("name"));

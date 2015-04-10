@@ -3,13 +3,13 @@ package org.template.rm;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
-import org.template.domain.Sprintbacklog;
+import org.template.domain.SprintBacklog;
 
-public class SprintbacklogRowMapper implements RowMapper<Sprintbacklog> {
+public class SprintbacklogRowMapper implements RowMapper<SprintBacklog> {
 
     @Override
-    public Sprintbacklog mapRow(ResultSet rs, int i) throws SQLException {
-        Sprintbacklog sprintbacklog = new Sprintbacklog();
+    public SprintBacklog mapRow(ResultSet rs, int i) throws SQLException {
+        SprintBacklog sprintbacklog = new SprintBacklog();
         sprintbacklog.setSprintBacklogId(rs.getInt("sprintBacklogId"));
         sprintbacklog.setSprintBacklogId(rs.getInt("sprintId"));
         sprintbacklog.setProductBacklogId(rs.getInt("productBacklogId"));

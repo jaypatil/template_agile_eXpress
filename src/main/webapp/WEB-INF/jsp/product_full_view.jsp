@@ -199,7 +199,7 @@
                         <div class="col-lg-12">
                             <div class="col-lg-8">
                                 <h1 class="page-header">
-                                    Welcome <small><< User Name >></small>
+                                    Product Management<small> List of Products</small>
                                 </h1>
                             </div>
                             <div class="col-lg-4">
@@ -235,93 +235,183 @@
                     </div>
                     <!-- /.row -->
                     <div class="row">
-
-                        <div class="col-lg-12">
-                            Write some thing here
-                            <table border="1">
-                                <thead>
-                                    <tr>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="index.htm">index</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="add_task.htm">add_task</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="add_user.htm">add_user</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td> 
-                                            <a href="list_product.htm">list_product</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="list_task.htm">list_task</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="add_product.htm">add_product</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="selected_product.htm">selected_product</a>
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="list_user.htm">list_user</a>
-
-                                        </td>
-                                    </tr>                                      <td>
-                                <tr>
-                                    <td>
-                                        <a href="product_full_view.htm">product_full_view</a>
-
-                                    </td>
-                                </tr>                                      <td>
-                                <tr>
-                                    <td>
-                                        <a href="add_module.htm">add_module</a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="add_product_backlog.htm">add_product_backlog</a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="add_sub_task.htm">add_sub_task</a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="list_sub_task.htm">list_sub_task</a>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-
-
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-comments fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">26</div>
+                                            <div>New Comments!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-green">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-tasks fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">12</div>
+                                            <div>New Tasks!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-shopping-cart fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">124</div>
+                                            <div>New Orders!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-red">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-support fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">13</div>
+                                            <div>Support Tickets!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>Module List</h2>
+                            <div class="col-lg-10">
+                                <div class="col-lg-2"><a class="btn btn-default" href="#">Edit</a></div>
+                                <div class="col-lg-2"><a class="btn btn-default" href="#">Delete</a></div>
+                                <div class="col-lg-2"><a class="btn btn-default" href="#">Add Module</a></div>
+                                <div class="col-lg-2"><a class="btn btn-default" href="#">Change Status</a></div>
+                                <div class="col-lg-2"><a class="btn btn-default" href="#">Upload</a></div>
+
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-group input-group">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-btn"><button class="btn btn-default" type="button"><i class="fa fa-search"></i></button></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- /.row -->
+                        <div class="col-lg-12">
+
+
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr</th>
+                                            <th>Module Name</th>
+                                            <th>Description</th>
+                                            <th>Date</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="active">
+                                            <td>/index.html</td>
+                                            <td>1265</td>
+                                            <td>32.3%</td>
+                                            <td>$321.33</td>
+                                        </tr>
+                                        <tr class="success">
+                                            <td>/about.html</td>
+                                            <td>261</td>
+                                            <td>33.3%</td>
+                                            <td>$234.12</td>
+                                        </tr>
+                                        <tr class="warning">
+                                            <td>/sales.html</td>
+                                            <td>665</td>
+                                            <td>21.3%</td>
+                                            <td>$16.34</td>
+                                        </tr>
+                                        <tr class="danger">
+                                            <td>/blog.html</td>
+                                            <td>9516</td>
+                                            <td>89.3%</td>
+                                            <td>$1644.43</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/404.html</td>
+                                            <td>23</td>
+                                            <td>34.3%</td>
+                                            <td>$23.52</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/services.html</td>
+                                            <td>421</td>
+                                            <td>60.3%</td>
+                                            <td>$724.32</td>
+                                        </tr>
+                                        <tr>
+                                            <td>/blog/post.html</td>
+                                            <td>1233</td>
+                                            <td>93.2%</td>
+                                            <td>$126.34</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.row -->
+
 
                 </div>
                 <!-- /.container-fluid -->
